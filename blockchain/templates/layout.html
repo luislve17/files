@@ -1,0 +1,29 @@
+<!doctype html>
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+<title>Votacion</title>
+
+<div class="layout-formulario">
+	{% if session['logged_in'] %}
+		<form action="/logout" method="get" class="logout">
+		  <input type="submit" value="Salir" name="Submit" id="frm1_submit" />
+		  <p>Puede ver los resultados aqui: </p>
+		  <a href="/chartPie">Grafico 1 </a>
+		  <p>o </p>
+		  <a href="/chartBar"> Grafico 2</a>
+		</form>
+	{% endif %}
+
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+	    {% for message in messages %}
+	      <div id="message">
+				     <p class="message-sistema">{{ message }}</p>
+			  </div>
+	    {% endfor %}
+	  {% endif %}
+	{% endwith %}
+
+	{% block body %}
+	{% endblock %}
+	
+</div>

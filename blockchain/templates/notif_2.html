@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voto registrado</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body,html,document{
+		  width: 100%;
+		  height: 100%;
+		}
+		.voto-registrado{
+		  width: 100%;
+		  height: 100%;
+		  background-image: url('../static/background3.jpg');
+		  display: flex;
+		  flex-direction: column;
+		}
+		.voto-registrado >form {
+			margin: auto;
+			padding: 10px 20px 40px;
+			background: rgba(0,0,0,0.6);
+			color: white;
+		}
+		.voto-registrado >form >h2{
+			font-weight: bold;
+			font-size: 30px;
+			margin: 30px;
+		}
+		.voto-registrado >form >p{
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.voto-registrado >form a{
+			font-weight: bold;
+			font-size: 20px;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="voto-registrado">
+		<form action="/notif_2" method="POST">
+			<h2>SU VOTO SE HA REALIZADO CON ÉXITO</h2>
+			<p>
+				Revise cómo van los resultados de las elecciones
+				<br><a href="/chartPie">Diagrama 1</a>
+				<br><a href="/chartBar">Diagrama 2</a>
+			</p>
+		</form>
+	</div>
+</body>

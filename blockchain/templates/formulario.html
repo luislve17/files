@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="form-votar">
+        <form action="/votar" method="POST">
+            <hr>
+            <h1 align="center">ELECCIONES PRESIDENCIALES 2016</h1>
+            <h2>Sr. {{ usr_name }} escoja a su candidato:</h2>
+            <div>
+                <input type="radio" name="opc" value="Barnechea">Alfredo Barnechea<br />
+                <input type="radio" name="opc" value="Garcia">Alan García<br />
+                <input type="radio" name="opc" value="Guzman">Julio Guzmán<br />
+                <input type="radio" name="opc" value="Fujimori">Keiko Fujimori<br />
+                <input type="radio" name="opc" value="PPK">Pedro Pablo Kuczynski<br />
+                <hr>
+            </div>
+            <div align="center">
+                <input type="submit" value ="Enviar">
+            </div>
+        </form>
+    </div>
+{% endblock %}

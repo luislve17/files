@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+
+body,html,document{
+  width: 100%;
+  height: 100%;
+}
+
+.login-screen-body{
+  width: 100%;
+  height: 100%;
+  font-family: Arial;
+  padding: 50px;
+  background-image: url('background1.jpg');
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;;
+  justify-content: center;
+}
+.login-screen-body >h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px auto;
+  color: #0a1224;
+  text-shadow: 0 0 5px white;
+}
+.login {
+  margin: 20px auto;
+  width: 300px;
+}
+.login-screen {
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 5px
+}
+
+.message-sistema{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  background: #0d101e;
+  color: #e5e2f3;
+  font-weight: bold;
+  position: absolute;
+}
+
+.logout {
+  padding: 20px 50px;
+  background: rgba(0,0,0,.7);
+}
+.logout >p, .logout >a{
+  color: white;
+  display: inline;
+  font-weight: bold;
+  font-size: 16px;
+}
+.logout >a {
+  color: white;
+}
+
+.layout-formulario{
+  width: 100%;
+  height: 100%;
+  background-image: url('background2.jpg');
+  background-size: 100% 100%;
+}
+.form-votar{
+  width: 100%;
+  padding: 20px 50px;
+}
+.form-votar >form {
+  width: 920px;
+  background: rgba(5, 9, 21, 0.78);
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.form-votar >form >h1 {
+  color: white;
+  font-size: 30px;
+  margin: 10px auto;
+}
+.form-votar >form >h2 {
+  margin: 10px auto 20px;
+  font-size: 24px;
+  margin: 10px 20px;
+  color: white;
+}
+
+.form-votar >form >div {
+  color: #b4aedd;
+  font-weight: bold;
+  font-size: 20px;
+}
+.form-votar >form >div >input {
+  margin: 10px 0;
+}
+input[type="submit"] {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  background: #aa0b0b;
+  color: white;
+}
+input[type="submit"]:hover {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  background: #8d0b0b;
+  color: white;
+}
+
+.message {
+  margin: 20px auto;
+  width: 300px;
+}
+.message-screen {
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 5px
+}
+
+
+.app-title {
+  text-align: center;
+  color: #777;
+}
+
+.login-form {
+  text-align: center;
+}
+.control-group {
+  margin-bottom: 10px;
+}
+
+input {
+  text-align: center;
+  background-color: #ECF0F1;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 250px;
+  transition: border .5s;
+}
+
+input:focus {
+  border: 2px solid #3498DB;
+  box-shadow: none;
+}
+
+.btn {
+  border: 2px solid transparent;
+  background: #3498DB;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #2980B9;
+}
+
+.login-link {
+  font-size: 12px;
+  color: #444;
+  display: block;
+	margin-top: 12px;
+}
+
+.chart-bar ,.chart-pie{
+  width: 100%;
+  height: 100%;
+  background-image: url('../static/background4.jpg');
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.chart-bar  >h1 ,.chart-pie >h1{
+  color: white;
+  font-weight: bold;
+  margin: 20px auto;
+  background: black;
+  width: 580px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.chart-bar >canvas ,.chart-pie >canvas{
+  background: rgba(0,0,0,.85);
+  padding: 20px;
+  margin: 20px auto;
+}
+.chart-bar >a ,.chart-pie >a{
+  background: rgba(0,0,0,.9);
+  margin: 20px auto;
+  width: 400px;
+  height: 40px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+
+}
+
+
